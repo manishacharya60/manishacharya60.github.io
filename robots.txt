@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://manishacharya60.github.io/sitemap.xml
+Sitemap: https://acharyamanish.net/sitemap.xml
