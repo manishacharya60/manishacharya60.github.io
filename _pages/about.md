@@ -19,8 +19,8 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+Namaste 🙏. I am a second-year undergraduate student at [Vanderbilt University](http://vanderbilt.edu), pursuing a double major in Computer Science and Mathematics along with a minor in Electrical and Computer Engineering. My academic interests include computational analysis, artificial intelligence, machine learning, and optimization.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+At Vanderbilt, I am actively engaged in research with the [Huang Lab](http://yuhuang-lab.github.io), under the mentorship of [Prof. Yu Huang](http://yuhuang-lab.github.io) and [Yifan Zhang](https://coderdoge.com). I am also part of the [Vanderbilt AI Negotiation Lab](https://www.ainegotiationlab-vanderbilt.com), collaborating with [Prof. Ray Friedman](https://business.vanderbilt.edu/bio/ray-friedman/). Currently, I am developing a new research project aimed at advancing the mathematical reasoning capabilities of large language models (LLMs).
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+Beyond academics, I co-founded and lead [NPL Coder](http://nplcoder.org), mentoring students in competitive programming and organizing Olympiads in Nepal. I also co-founded Uunchai, providing underserved communities with interdisciplinary skills in STEM and the humanities. These leadership roles drive my goal to bridge education, technology, and research for meaningful societal impact.

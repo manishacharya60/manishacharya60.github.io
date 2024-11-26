@@ -4,10 +4,7 @@ github_users:
 repo_description_lines_max: 2
 
 github_repos:
-  - alshedivat/al-folio
-  - jekyll/jekyll
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
+  - manishacharya60/rag-optimization
+  - manishacharya60/vubayu
+  - manishacharya60/raspberryPi_facial_recognition
+  - manishacharya60/word-scramble-game
