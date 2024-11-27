@@ -1,97 +1,105 @@
-- title: General Information
-  type: map
-  contents:
-    - name: Full Name
-      value: Manish Acharya
-    - name: Date of Birth
-      value: 18th August, 2003
-    - name: Languages
-      value: English, Nepali
+# - title: General Information
+#   type: map
+#   contents:
+#     - name: Full Name
+#       value: Manish Acharya
+#     - name: Date of Birth
+#       value: 18th August, 2003
+#     - name: Languages
+#       value: English, Nepali
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+    - title: B.S. in Computer Science and Mathematics (double major)
+      institution: Vanderbilt University, TN, USA
+      year: 2023 - 2027
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
+        - title: Relevant Coursework
           contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
-      description:
-        - Description 1.
-        - Description 2.
+            - <u>Computer Science:</u> Algorithms, Data Structures, Discrete Structures, Computer Architecture, Intermediate Software Design
+            - <u>Mathematics:</u> Probability & Statistics, Advanced Linear Algebra, Linear Algebra, Multi-variable Calculus, Calculus I-II
 
-- title: Experience
+- title: Research Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: Undergraduate Research Assistant
+      institution: Huang Lab, Vanderbilt University
+      year: 2024 - Present
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
+        - Research on developing AI models and benchmarks to enhance mathematical reasoning & problem-solving.
+        - "Advisor: Yifan Zhang, Prof. Yu Huang"
+
+    - title: Undergraduate Research Assistant
+      institution: Huang Lab, Vanderbilt University
+      year: 2024
       description:
-        - Description 1.
-        - Description 2.
+        - Research on using large language models (LLMs) for software patch generation.
+        - "Advisor: Yifan Zhang, Prof. Yu Huang"
 
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
+    - title: Undergraduate Research Assistant
+      institution: Vanderbilt AI Negotiation Lab, Owen Graduate School of Management
+      year: 2023 - Present
       description:
+        - Research on integrating AI negotiation models into web platforms, optimizing performance, and enhancing public accessibility.
+        - "Advisor: Prof. Ray Friedman"
 
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
-
-- title: Open Source Projects
+- title: Teaching Experience
   type: time_table
   contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+    - title: Undergraduate Course Assistant,
+      institution: Vanderbilt University
+      year: 2024 - Present
+      description:
+        - "MATH 2300: Multivariable Calculus"
+        - Mentor 80+ students in multivariable calculus through group learning, individual sessions, and collaborative teaching resources.
+
+- title: Industry Experience
+  type: time_table
+  contents:
+    - title: Associate Software Developer
+      institution: Gurzu Inc.
+      year: 2022 - 2023
+      description:
+        - Developed advanced medical detection tools, improving breast cancer detection accuracy by 17% and delivering comprehensive project documentation.
+
+    - title: Software Developer
+      institution: E-Digital Nepal
+      year: 2021 - 2022
+      description:
+        - Developed a school management system adopted by 150+ institutions, enhanced mobile app functionality, and mentored junior developers on examination management modules.
+
+# - title: Open Source Projects
+#   type: time_table
+#   contents:
+#     - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
+#       year: 2015-now
+#       description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
 
 - title: Honors and Awards
   type: time_table
   contents:
-    - year: 1921
+    - year: 2024
       items:
-        - Nobel Prize in Physics
-        - Matteucci Medal
-    - year: 2029
+        - "Best Project Award (Brain-to-Art Interface), SyBBURE Research Program: Recognized for innovation in real-time data processing and visualization."
+    - year: 2023
       items:
-        - Max Planck Medal
+        - SyBBURE Searle Undergraduate Research Program (Top 20 students annually) (\$12,500/year)
+        - "Chancellor’s Scholarship (awarded to <1% of incoming students for outstanding leadership,
+        character, academic achievement, and commitment to diversity and social justice)"
 
-- title: Academic Interests
-  type: nested_list
-  contents:
-    - title: Topic 1.
-      items:
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
-      items:
-        - Description 1.
-        - Description 2.
-
-- title: Other Interests
-  type: list
-  contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+# - title: Academic Interests
+#   type: nested_list
+#   contents:
+#     - title: Topic 1.
+#       items:
+#         - Description 1.
+#         - Description 2.
+#     - title: Topic 2.
+#       items:
+#         - Description 1.
+#         - Description 2.
+# - title: Other Interests
+#   type: list
+#   contents:
+#     - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
