@@ -85,8 +85,9 @@
     - year: 2023
       items:
         - SyBBURE Searle Undergraduate Research Program (Top 20 students annually) (\$12,500/year)
-        - "Chancellor’s Scholarship (awarded to <1% of incoming students for outstanding leadership,
-        character, academic achievement, and commitment to diversity and social justice)"
+        - >
+          Chancellor’s Scholarship (awarded to <1% of incoming students for outstanding leadership,
+          character, academic achievement, and commitment to diversity and social justice)
 
 # - title: Academic Interests
 #   type: nested_list
