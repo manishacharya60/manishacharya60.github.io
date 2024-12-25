@@ -19,8 +19,16 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Namaste 🙏. I am a second-year undergraduate student at [Vanderbilt University](https://vanderbilt.edu), pursuing a double major in Computer Science and Mathematics along with a minor in Electrical and Computer Engineering. My academic interests include computational analysis, artificial intelligence, machine learning, and optimization.
+Namaste 🙏. I am a second-year undergraduate student at [Vanderbilt University](https://vanderbilt.edu), pursuing a double major in Computer Science and Mathematics along with a minor in Electrical and Computer Engineering.
 
-At Vanderbilt, I am actively engaged in research with the [Huang Lab](https://yuhuang-lab.github.io), under the mentorship of [Prof. Yu Huang](https://yuhuang-lab.github.io) and [Yifan Zhang](https://coderdoge.com). I am also part of the [Vanderbilt AI Negotiation Lab](https://www.ainegotiationlab-vanderbilt.com), collaborating with [Prof. Ray Friedman](https://business.vanderbilt.edu/bio/ray-friedman/). Currently, I am developing a new research project aimed at advancing the mathematical reasoning capabilities of large language models (LLMs).
+At Vanderbilt, I am actively engaged in research with the [Huang Lab](https://yuhuang-lab.github.io), under the mentorship of [Prof. Yu Huang](https://yuhuang-lab.github.io) and [Yifan Zhang](https://coderdoge.com). I am also part of the [Vanderbilt AI Negotiation Lab](https://www.ainegotiationlab-vanderbilt.com), collaborating with [Prof. Ray Friedman](https://business.vanderbilt.edu/bio/ray-friedman/). Currently, I am working on a new research project aimed at advancing the mathematical reasoning capabilities of large language models (LLMs).
 
-Beyond academics, I co-founded and lead [NPL Coder](https://nplcoder.org), mentoring students in competitive programming and organizing Olympiads in Nepal. I also co-founded Uunchai, providing underserved communities with interdisciplinary skills in STEM and the humanities. These leadership roles drive my goal to bridge education, technology, and research for meaningful societal impact.
+Beyond academics, I co-founded and lead [NPL Coder](https://nplcoder.org), fostering computational innovation in Nepal by mentoring students, providing resources, organizing Olympiads, and working to secure Nepal’s membership in the IOI. I also co-founded Uunchai, providing underprivileged communities with skills in STEM and the humanities.
+
+<b>Research Interests</b>
+
+[Computational Analysis](),
+[Computational Complexity](),
+[Algorithm Design and Optimization](), <br/>
+[Artificial Intelligence and Machine Learning](),
+[Theoretical Computer Science]()
