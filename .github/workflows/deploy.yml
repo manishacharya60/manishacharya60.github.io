@@ -104,6 +104,7 @@ jobs:
         with:
           name: site
           path: _site
+          retention-days: 7
       - name: Purge unused CSS 🧹
         run: |
           npm install -g purgecss
