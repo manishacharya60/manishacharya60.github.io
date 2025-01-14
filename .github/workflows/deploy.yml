@@ -99,6 +99,11 @@ jobs:
           bundle exec jekyll build
       - name: List Generated WebP Files
         run: ls -R _site/assets/img/
+      - name: Upload Build Artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: site
+          path: _site
       - name: Purge unused CSS 🧹
         run: |
           npm install -g purgecss
