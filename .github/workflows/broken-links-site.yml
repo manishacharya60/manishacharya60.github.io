@@ -14,11 +14,6 @@ jobs:
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v4
-      - name: Download Build Artifacts
-        uses: actions/download-artifact@v3
-        with:
-          name: site
-          path: _site
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
@@ -43,6 +38,11 @@ jobs:
         run: |
           npm install -g purgecss
           purgecss -c purgecss.config.js
+      - name: Download Build Artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: site
+          path: _site
       - name: Link Checker 🔗
         uses: lycheeverse/lychee-action@v1.9.0
         with:
