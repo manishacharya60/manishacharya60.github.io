@@ -77,14 +77,6 @@ jobs:
         with:
           python-version: "3.13"
           cache: "pip" # caching pip dependencies
-      - name: Install ImageMagick 🖼️
-        run: sudo apt-get update && sudo apt-get install -y imagemagick
-      - name: Verify ImageMagick Commands
-        run: |
-          which convert
-          convert -version
-      - name: List Source Images
-        run: ls -R assets/img/
       - name: Update _config.yml ⚙️
         uses: fjogeleit/yaml-update-action@main
         with:
@@ -97,14 +89,6 @@ jobs:
           pip3 install --upgrade nbconvert
           export JEKYLL_ENV=production
           bundle exec jekyll build
-      - name: List Generated WebP Files
-        run: ls -R _site/assets/img/
-      - name: Upload Build Artifacts
-        uses: actions/upload-artifact@v4
-        with:
-          name: site
-          path: _site
-          retention-days: 7
       - name: Purge unused CSS 🧹
         run: |
           npm install -g purgecss

@@ -19,6 +19,8 @@ jobs:
         with:
           ruby-version: "3.2.2"
           bundler-cache: true
+      - name: Install ImageMagick
+        run: sudo apt-get update && sudo apt-get install -y imagemagick
       - name: Update _config.yml ⚙️
         uses: fjogeleit/yaml-update-action@main
         with:
@@ -38,11 +40,6 @@ jobs:
         run: |
           npm install -g purgecss
           purgecss -c purgecss.config.js
-      - name: Download Build Artifacts
-        uses: actions/download-artifact@v4
-        with:
-          name: site
-          path: _site
       - name: Link Checker 🔗
         uses: lycheeverse/lychee-action@v1.9.0
         with:
