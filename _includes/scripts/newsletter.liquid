@@ -6,13 +6,13 @@
 >
   <form
     class="newsletter-form"
-    action="https://app.loops.so/api/newsletter-form/{{ site.newsletter.endpoint }}"
-    method="POST"
+    id="newsletter-form"
     style="justify-content: {% if include.left %}flex-start{% elsif include.right %}flex-end{% else %}center{% endif %}"
   >
     <input
       class="newsletter-form-input"
-      name="newsletter-form-input"
+      id="newsletter-email"
+      name="email"
       type="email"
       placeholder="user@example.com"
       required=""
@@ -29,7 +29,7 @@
     <button
       type="button"
       class="newsletter-loading-button"
-      style="justify-content: {% if include.left %}flex-start{% elsif include.right %}flex-end{% else %}center{% endif %}"
+      style="display: none; justify-content: {% if include.left %}flex-start{% elsif include.right %}flex-end{% else %}center{% endif %}"
     >
       Please wait...
     </button>
@@ -37,21 +37,22 @@
 
   <div
     class="newsletter-success"
-    style="justify-content: {% if include.left %}flex-start{% elsif include.right %}flex-end{% else %}center{% endif %}"
+    style="display: none; justify-content: {% if include.left %}flex-start{% elsif include.right %}flex-end{% else %}center{% endif %}"
   >
     <p class="newsletter-success-message">You're subscribed!</p>
   </div>
 
   <div
     class="newsletter-error"
-    style="justify-content: {% if include.left %}flex-start{% elsif include.right %}flex-end{% else %}center{% endif %}"
+    style="display: none; justify-content: {% if include.left %}flex-start{% elsif include.right %}flex-end{% else %}center{% endif %}"
   >
-    <p class="newsletter-error-message">Oops! Something went wrong, please try again</p>
+    <p class="newsletter-error-message">Oops! Something went wrong, please try again.</p>
   </div>
 
   <button
     class="newsletter-back-button"
     type="button"
+    style="display: none;"
     onmouseout='this.style.textDecoration="none"'
     onmouseover='this.style.textDecoration="underline"'
   >
@@ -62,6 +63,7 @@
 <script>
   function submitHandler(event) {
     event.preventDefault();
+
     var container = event.target.parentNode;
     var form = container.querySelector('.newsletter-form');
     var formInput = container.querySelector('.newsletter-form-input');
@@ -72,65 +74,41 @@
     var submitButton = container.querySelector('.newsletter-form-button');
     var loadingButton = container.querySelector('.newsletter-loading-button');
 
-    const rateLimit = () => {
+    // Get email input
+    var email = formInput.value.trim();
+    if (!email) {
       errorContainer.style.display = 'flex';
-      errorMessage.innerText = 'Too many signups, please try again in a little while';
-      submitButton.style.display = 'none';
-      formInput.style.display = 'none';
-      backButton.style.display = 'block';
-    };
-
-    // Compare current time with time of previous sign up
-    var time = new Date();
-    var timestamp = time.valueOf();
-    var previousTimestamp = localStorage.getItem('loops-form-timestamp');
-
-    // If last sign up was less than a minute ago
-    // display error
-    if (previousTimestamp && Number(previousTimestamp) + 60000 > timestamp) {
-      rateLimit();
+      errorMessage.innerText = 'Please enter a valid email.';
       return;
     }
-    localStorage.setItem('loops-form-timestamp', timestamp);
 
     submitButton.style.display = 'none';
     loadingButton.style.display = 'flex';
 
-    var formBody = 'userGroup=&email=' + encodeURIComponent(formInput.value);
-    fetch(event.target.action, {
+    // Google Apps Script URL
+    var scriptURL = 'https://script.google.com/macros/s/AKfycbyguVnAgHKah2RJaOJO-VxjUmwajbjj1hlbJIvi9ohfB7-Cqusr5WH-O_I8Q6Ealqg-/exec';
+
+    // Send email to Google Sheet
+    fetch(scriptURL, {
       method: 'POST',
-      body: formBody,
-      headers: {
-        'Content-Type': 'application/x-www-form-urlencoded',
-      },
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams({ email: email }),
     })
-      .then((res) => [res.ok, res.json(), res])
-      .then(([ok, dataPromise, res]) => {
-        if (ok) {
-          // If response successful
-          // display success
+      .then((response) => response.text())
+      .then((data) => {
+        console.log('Server Response:', data); // Debugging log
+        if (data.includes('Success')) {
           success.style.display = 'flex';
           form.reset();
         } else {
-          // If response unsuccessful
-          // display error message or response status
-          dataPromise.then((data) => {
-            errorContainer.style.display = 'flex';
-            errorMessage.innerText = data.message ? data.message : res.statusText;
-          });
+          errorContainer.style.display = 'flex';
+          errorMessage.innerText = 'Something went wrong: ' + data;
         }
       })
       .catch((error) => {
-        // check for cloudflare error
-        if (error.message === 'Failed to fetch') {
-          rateLimit();
-          return;
-        }
-        // If error caught
-        // display error message if available
+        console.error('Fetch Error:', error); // Debugging log
         errorContainer.style.display = 'flex';
-        if (error.message) errorMessage.innerText = error.message;
-        localStorage.setItem('loops-form-timestamp', '');
+        errorMessage.innerText = 'Network error. Please try again.';
       })
       .finally(() => {
         formInput.style.display = 'none';
@@ -138,6 +116,7 @@
         backButton.style.display = 'block';
       });
   }
+
   function resetFormHandler(event) {
     var container = event.target.parentNode;
     var formInput = container.querySelector('.newsletter-form-input');
