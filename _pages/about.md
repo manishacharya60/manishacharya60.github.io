@@ -28,9 +28,8 @@ Beyond academics, I co-founded and lead [NPL Coder](https://nplcoder.org), foste
 <b>Research Interests</b>
 
 <ul style="font-size: smaller;">
-  <li><a href="#">Computational Analysis</a></li>
-  <li><a href="#">Computational Complexity Theory</a></li>
-  <li><a href="#">Algorithm Design and Optimization</a></li>
-  <li><a href="#">Artificial Intelligence and Machine Learning</a></li>
-  <li><a href="#">Theoretical Computer Science</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Theoretical_computer_science" target="_blank">Theoretical Computer Science</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Computational_complexity_theory" target="_blank">Computational Complexity Theory</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Algorithm" target="_blank">Algorithm Design and Optimization</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Artificial_intelligence" target="_blank">Artificial Intelligence and Machine Learning</a></li>
 </ul>
