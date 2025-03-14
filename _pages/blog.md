@@ -193,4 +193,8 @@ pagination:
 {% include pagination.liquid %}
 {% endif %}
 
+{% if site.newsletter.enabled and site.footer_fixed %}
+{% include scripts/newsletter.liquid center=true %}
+{% endif %}
+
 </div>

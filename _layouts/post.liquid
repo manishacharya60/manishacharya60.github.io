@@ -96,4 +96,8 @@ layout: default
   {% if site.giscus and page.giscus_comments %}
     {% include giscus.liquid %}
   {% endif %}
+
+  {% if site.newsletter.enabled and site.footer_fixed %}
+    {% include scripts/newsletter.liquid center=true %}
+  {% endif %}
 </div>
