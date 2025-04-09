@@ -23,7 +23,7 @@ Namaste 🙏. I am a second-year undergraduate student at [Vanderbilt University
 
 At Vanderbilt, I am actively engaged in research with the [Huang Lab](https://yuhuang-lab.github.io), under the mentorship of [Prof. Yu Huang](https://yuhuang-lab.github.io) and [Yifan Zhang](https://coderdoge.com). I am also part of the [Vanderbilt AI Negotiation Lab](https://www.ainegotiationlab-vanderbilt.com), collaborating with [Prof. Ray Friedman](https://business.vanderbilt.edu/bio/ray-friedman/). Currently, I am working on a new research project aimed at advancing the mathematical reasoning capabilities of large language models (LLMs).
 
-Beyond academics, I co-founded and lead [NPL Coder](https://nplcoder.org), fostering computational innovation in Nepal by mentoring students, providing resources, organizing Olympiads, and working to secure Nepal’s membership in the IOI. I also co-founded Uunchai, providing underprivileged communities with skills in STEM and the humanities.
+<!-- Beyond academics, I co-founded and lead [NPL Coder](https://nplcoder.org), fostering computational innovation in Nepal by mentoring students, providing resources, organizing Olympiads, and working to secure Nepal’s membership in the IOI. I also co-founded Uunchai, providing underprivileged communities with skills in STEM and the humanities. -->
 
 <b>Research Interests</b>
 
@@ -33,3 +33,7 @@ Beyond academics, I co-founded and lead [NPL Coder](https://nplcoder.org), foste
   <li><a href="https://en.wikipedia.org/wiki/Algorithm" target="_blank">Algorithm Design and Optimization</a></li>
   <li><a href="https://en.wikipedia.org/wiki/Artificial_intelligence" target="_blank">Artificial Intelligence and Machine Learning</a></li>
 </ul>
+
+<!-- <li class="nav-item">
+            <a class="nav-link" href="{{ '/assets/pdf/Manish_CV.pdf' | relative_url }}" target="_blank"> cv </a>
+</li> -->
